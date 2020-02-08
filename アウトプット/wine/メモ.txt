@@ -7,4 +7,20 @@
 ◆データ加工なし
 ◆結果94.3%
 
+２：外れ値の加工
+◆加工方法
+　平均値：ほかの値が外れ値扱いにされるため良くなさそう
+　中央値:
+　25%,75%:収まる
+　最頻値：
+◆使用モデル：ランダムフォレスト
+◆パラメータ
+　test random_state = 1
 
+　randomforest
+　random_state：0
+　n_estimators：1000
+　max_depth：3
+　min_samples_leaf=4
+◆データ加工あり
+◆結果98.8%
